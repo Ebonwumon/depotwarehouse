@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DEPOT WAREHOUSE Software">
+    <meta name="description" content="DEPOT WAREHOUSE Software is an Edmonton, Alberta based software development company that specializes in dynamic webapps to manage your data">
 
     <title>DEPOT WAREHOUSE Software Inc.</title>
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/forms.css">
 
@@ -44,7 +44,7 @@
         <div class="content section-1">
             <h2 class="content-header is-centered">What we do</h2>
             <div class="pure-g">
-                <div class="l-box pure-u-1-3">
+                <div class="l-box pure-u-1 pure-u-md-1-3">
                     <h3 class="content-subhead">Create data sanity and management</h3>
                     <p>
                         We will examine your business processes and data intake and create software to streamline
@@ -53,7 +53,7 @@
                     </p>
                 </div>
 
-                <div class="l-box pure-u-1-3">
+                <div class="l-box pure-u-1 pure-u-md-1-3">
                     <h3 class="content-subhead">Streamline client interfacing</h3>
                     <p>
                         Nothing frustrates a client more than when they want to contact or do business with you
@@ -62,7 +62,7 @@
                     </p>
                 </div>
 
-                <div class="l-box pure-u-1-3">
+                <div class="l-box pure-u-1 pure-u-md-1-3">
                     <h3 class="content-subhead">Write beautiful code</h3>
                     <p>
                         We hope we have a long-lasting relationship with you, but if you ever hire on another developer
@@ -75,10 +75,13 @@
 
         <div class="content section-2">
             <a id="contact" class="anchor"></a>
-            <h2 class="content-header is-centered">Drop us a line</h2>
+            <h2 class="content-header is-centered">
+                <i class="fa fa-envelope"></i>
+                Drop us a line
+            </h2>
 
             <div class="l-box-lrg is-centered">
-                <form class="pure-form pure-form-aligned">
+                <form class="pure-form pure-form-aligned" style="position: relative; left:-80px;">
                     <fieldset>
 
                         <div class="pure-control-group">
@@ -96,7 +99,13 @@
                             <textarea name="message" rows="5" class="pure-input-1-2"></textarea>
                         </div>
 
-                        <button type="submit" class="pure-button pure-button-lightblue">Send Message</button>
+                        <div class="pure-controls">
+                            <button type="submit" class="pure-button pure-button-lightblue">
+                                <i class="fa fa-send"></i>
+                                Send Message
+                            </button>
+                        </div>
+
                     </fieldset>
                 </form>
             </div>
