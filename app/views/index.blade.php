@@ -81,7 +81,7 @@
             </h2>
 
             <div class="l-box-lrg is-centered">
-                <form class="pure-form pure-form-aligned" style="position: relative; left:-80px;">
+                <form method="POST" action="{{ URL::route('home.mail') }}" class="pure-form pure-form-aligned" style="position: relative; left:-80px;">
                     <fieldset>
 
                         <div class="pure-control-group">

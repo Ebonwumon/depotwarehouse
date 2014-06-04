@@ -15,7 +15,7 @@ return array(
 	|
 	*/
 
-	'driver' => 'smtp',
+	'driver' => 'mandrill',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -55,6 +55,8 @@ return array(
 	*/
 
 	'from' => array('address' => null, 'name' => null),
+
+    'to' => "ebonwumon@depotwarehouse.net",
 
 	/*
 	|--------------------------------------------------------------------------
