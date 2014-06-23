@@ -8,6 +8,7 @@
 
 namespace DepotWarehouse\Home\ContactForm\Validators;
 
+use \Validator;
 
 class MailValidator implements BaseValidator {
 
@@ -17,7 +18,7 @@ class MailValidator implements BaseValidator {
         $rules = array(
             'from' => 'required|email',
             'name' => 'required|alpha',
-            'message' => 'required|alpha_dash'
+            'message' => 'required'
         );
 
         $v = Validator::make($attributes, $rules);

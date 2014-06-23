@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/forms.css">
 
@@ -28,6 +29,7 @@
             </ul>
         </div>
     </nav>
+    @include('partials/notification')
 
     <div class="splash-container">
         <div class="splash">
@@ -81,7 +83,8 @@
             </h2>
 
             <div class="l-box-lrg is-centered">
-                <form method="POST" action="{{ URL::route('home.mail') }}" class="pure-form pure-form-aligned" style="position: relative; left:-80px;">
+                @include('errors')
+                {{ Form::open(array('route' => 'home.mail', 'class' => "pure-form pure-form-aligned", 'style' => "position: relative; left:-80px;", 'method' => 'POST')) }}
                     <fieldset>
 
                         <div class="pure-control-group">
@@ -90,8 +93,8 @@
                         </div>
 
                         <div class="pure-control-group">
-                            <label for="email">Your Email</label>
-                            <input name="email" type="email" placeholder="Your Email" class="pure-input-1-2">
+                            <label for="from">Your Email</label>
+                            <input name="from" type="email" placeholder="Your Email" class="pure-input-1-2">
                         </div>
 
                         <div class="pure-control-group">
@@ -107,7 +110,7 @@
                         </div>
 
                     </fieldset>
-                </form>
+                {{ Form::close() }}
             </div>
 
         </div>

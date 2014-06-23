@@ -3,6 +3,6 @@
 
 return array(
   'mandrill' => array(
-      'secret' => getenv('MANDRILL_SECRET'),
+      'secret' => getenv('MANDRILL_KEY'),
   ),
 );

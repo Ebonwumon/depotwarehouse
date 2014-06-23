@@ -185,6 +185,22 @@ label {
     visibility: hidden;
 }
 
+.notify-success {
+    z-index: 5;
+    position:relative;
+    background:#e9ffd9;
+    border:1px solid #a6ca8a;
+    padding-top:0.5em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+.dismiss {
+    float: right;
+    opacity: 0.89;
+    margin-right: 0.5em;
+}
+
 /* Hide the title if the bar is too small */
 @media (max-width: 41em) {
     .pure-menu.home-menu .pure-menu-heading {

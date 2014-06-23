@@ -1,5 +1,5 @@
 <p>
-    New DEPOT WAREHOUSE Contact From: {{ $sender }}
+    New DEPOT WAREHOUSE Contact From: {{ $name }}
 </p>
 
 <p>
