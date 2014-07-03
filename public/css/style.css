@@ -14,10 +14,13 @@ html, button, input, select, textarea,
     font-family: 'Maven Pro', sans-serif;
 }
 
+html { height: 100%; }
+
 body {
     line-height: 1.6em;
     color: #7f8c8d;
     font-size: 13px;
+    height: calc(100% - 62px);
 }
 
 h1,
@@ -38,6 +41,7 @@ label {
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    height: 62px;
 }
 
 .home-menu.pure-menu-open {
@@ -72,6 +76,12 @@ label {
 
 .home-menu li a:hover {
     background: none;
+}
+
+/* We wrap everything so that it's offset by menu height */
+.wrap {
+    margin-top: 62px;
+    height: 100%;
 }
 
 .splash-container {
@@ -199,6 +209,13 @@ label {
     float: right;
     opacity: 0.89;
     margin-right: 0.5em;
+}
+
+/* Blog styles */
+.blog-container {
+    background:#C77116;
+    padding: 1em;
+    height:100%;
 }
 
 /* Hide the title if the bar is too small */

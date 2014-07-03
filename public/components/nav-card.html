@@ -1,0 +1,51 @@
+<link rel="import" href="/vendor/bower_components/polymer/polymer.html">
+<link rel="import" href="/vendor/bower_components/paper-shadow/paper-shadow.html">
+<link rel="import" href="/vendor/bower_components/core-menu/core-menu.html">
+<link rel="import" href="/vendor/bower_components/paper-item/paper-item.html">
+
+<polymer-element name="nav-card">
+    <template>
+        <style>
+            :host {
+                display: block;
+                position: fixed;
+                background-color: white;
+                margin-top: 1em;
+                width: 400px;
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+            .profile-img img {
+                width:100%;
+            }
+
+            p {
+                padding: 20px;
+                padding-top: 0;
+                padding-bottom: 0;
+                text-align:justify;
+            }
+
+
+        </style>
+        <div class="profile-img">
+            <img src="https://pbs.twimg.com/profile_images/1098096355/portraitsqsm2.png" />
+        </div>
+
+        <p>
+            My name is Troy Pavlek. I've done lots of things including creating the
+            <a href="http://sc2ctl.com">largest Starcraft 2 Team League globally in 2013/2014</a>
+        </p>
+        <p>
+            Occasionally, I dabble in the more crayon side of things.
+        </p>
+
+        <content></content>
+
+    </template>
+    <script>
+        Polymer({});
+    </script>
+
+</polymer-element>
