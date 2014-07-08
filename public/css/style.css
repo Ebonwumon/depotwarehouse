@@ -21,6 +21,7 @@ body {
     color: #7f8c8d;
     font-size: 13px;
     height: calc(100% - 62px);
+    background-color: rgb(199, 113, 22);
 }
 
 h1,
@@ -213,13 +214,13 @@ label {
 
 /* Blog styles */
 .blog-container {
-    background:#C77116;
     padding: 1em;
+    padding-left: 0;
     height:100%;
 }
 
 /* Hide the title if the bar is too small */
-@media (max-width: 41em) {
+@media (max-width: 52em) {
     .pure-menu.home-menu .pure-menu-heading {
         display:none;
     }
