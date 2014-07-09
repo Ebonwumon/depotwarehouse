@@ -219,6 +219,10 @@ label {
     height:100%;
 }
 
+.post-container {
+    margin-left: 21rem;
+}
+
 /* Hide the title if the bar is too small */
 @media (max-width: 52em) {
     .pure-menu.home-menu .pure-menu-heading {
