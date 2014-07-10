@@ -4,7 +4,7 @@
   Archives
 @stop
 
-@section('content')
+@section('blog_content')
   <section>
     @if (isset($tag))
       <h2 class="title">{{ ucfirst($tag) }} Archives</h2>

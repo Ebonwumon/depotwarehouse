@@ -10,9 +10,15 @@
 <div class="blog-container" layout vertical center>
     <nav-panel>
         <ul>
-            <li>
-                <a href="{{ Wardrobe::route('posts.archive') }}">Archive</a>
-            </li>
+            @if (Route::currentRouteName() == "wardrobe.index")
+                <li>
+                    <a href="{{ Wardrobe::route('posts.archive') }}">Archive</a>
+                </li>
+            @else
+                <li>
+                    <a href="{{ Wardrobe::route('index') }}">Home</a>
+                </li>
+            @endif
         </ul>
     </nav-panel>
     <div class="post-container">
