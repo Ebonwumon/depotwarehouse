@@ -8,22 +8,22 @@
 
 @section('content')
 <div class="blog-container" layout vertical center>
-    <nav-panel>
-        <ul>
-            @if (Route::currentRouteName() == "wardrobe.index")
-                <li>
-                    <a href="{{ Wardrobe::route('posts.archive') }}">Archive</a>
-                </li>
-            @else
-                <li>
-                    <a href="{{ Wardrobe::route('index') }}">Home</a>
-                </li>
-            @endif
-        </ul>
-    </nav-panel>
     <div class="post-container">
         @yield('blog_content')
     </div>
+    <nav-panel>
+        <ul>
+            @if (Route::currentRouteName() == "wardrobe.index")
+            <li>
+                <a href="{{ Wardrobe::route('posts.archive') }}">Archive</a>
+            </li>
+            @else
+            <li>
+                <a href="{{ Wardrobe::route('index') }}">Home</a>
+            </li>
+            @endif
+        </ul>
+    </nav-panel>
 </div>
 
 @stop

@@ -216,7 +216,6 @@ label {
 .blog-container {
     padding: 1em;
     padding-left: 0;
-    height:100%;
 }
 
 .post-container {
@@ -224,8 +223,24 @@ label {
 }
 
 /* Hide the title if the bar is too small */
-@media (max-width: 52em) {
+@media (max-width: 52rem) {
     .pure-menu.home-menu .pure-menu-heading {
+        display:none;
+    }
+
+    .profile-img img {
+        display:none;
+    }
+
+    .post-container {
+        margin:1em;
+    }
+
+    .blog-container {
+        padding: 0;
+    }
+
+    nav-panel {
         display:none;
     }
 }
