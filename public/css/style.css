@@ -146,6 +146,11 @@ label {
     color:whitesmoke;
 }
 
+.content {
+    padding: 1em;
+}
+
+
 .section-1 {
     background: #1669AC;
 }
@@ -181,7 +186,6 @@ label {
 
 .l-box-lrg {
     padding: 2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 /* This is the class used for the footer */
@@ -237,11 +241,7 @@ label {
     body {
         font-size: 16px;
     }
-    /* We want to give the content area some more padding */
-    .content {
-        padding: 1em;
-    }
-
+    
     /* We can align the menu header to the left, but float the
     menu items to the right. */
     .home-menu {
