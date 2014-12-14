@@ -55,7 +55,7 @@
 
         <div class="l-box-lrg is-centered">
             @include('errors')
-            {{ Form::open(array('route' => 'home.mail', 'class' => "pure-form pure-form-aligned", 'style' => "position: relative; left:-80px;", 'method' => 'POST')) }}
+            {{ Form::open(array('route' => 'home.mail', 'class' => "pure-form pure-form-aligned", 'method' => 'POST')) }}
                 <fieldset>
 
                     <div class="pure-control-group">

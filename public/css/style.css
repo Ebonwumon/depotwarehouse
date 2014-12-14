@@ -21,6 +21,7 @@ body {
     color: #7f8c8d;
     font-size: 13px;
     height: calc(100% - 62px);
+    background-color: rgb(199, 113, 22);
 }
 
 h1,
@@ -145,6 +146,11 @@ label {
     color:whitesmoke;
 }
 
+.content {
+    padding: 1em;
+}
+
+
 .section-1 {
     background: #1669AC;
 }
@@ -180,7 +186,6 @@ label {
 
 .l-box-lrg {
     padding: 2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 /* This is the class used for the footer */
@@ -213,14 +218,33 @@ label {
 
 /* Blog styles */
 .blog-container {
-    background:#C77116;
     padding: 1em;
-    height:100%;
+    padding-left: 0;
+}
+
+.post-container {
+    margin-left: 21rem;
 }
 
 /* Hide the title if the bar is too small */
-@media (max-width: 41em) {
+@media (max-width: 52rem) {
     .pure-menu.home-menu .pure-menu-heading {
+        display:none;
+    }
+
+    .profile-img img {
+        display:none;
+    }
+
+    .post-container {
+        margin:1em;
+    }
+
+    .blog-container {
+        padding: 0;
+    }
+
+    nav-panel {
         display:none;
     }
 }
@@ -232,11 +256,7 @@ label {
     body {
         font-size: 16px;
     }
-    /* We want to give the content area some more padding */
-    .content {
-        padding: 1em;
-    }
-
+    
     /* We can align the menu header to the left, but float the
     menu items to the right. */
     .home-menu {

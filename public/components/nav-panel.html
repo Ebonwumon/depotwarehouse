@@ -1,0 +1,104 @@
+<link rel="import" href="/vendor/bower_components/polymer/polymer.html">
+<link rel="import" href="/vendor/bower_components/paper-shadow/paper-shadow.html">
+<link rel="import" href="/vendor/bower_components/core-menu/core-menu.html">
+<link rel="import" href="/vendor/bower_components/paper-item/paper-item.html">
+
+<polymer-element name="nav-panel">
+    <template>
+        <style>
+            :host {
+                display: block;
+                position: fixed;
+                top: 62px;
+                height:100%;
+                width:20rem;
+                font-size: 1.2rem;
+                font-weight: 300;
+                background:#245687;
+                color:#f5f5f5;
+            }
+
+            .profile-img img {
+                width:100%;
+            }
+
+            p {
+                padding: 20px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            a {
+                text-decoration: underline;
+                color:#f5f5f5;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            polyfill-next-selector { content: 'ul'}
+            .nav-panel ::content ul {
+                list-style: none;
+                margin: 0;
+                padding:0;
+            }
+
+            polyfill-next-selector { content: 'ul li'}
+            .nav-panel ::content ul li {
+                padding-left:1em;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+            }
+
+            .nav-panel ::content ul li a {
+                text-decoration: none;
+                color:#f5f5f5;
+                font-weight: bold;
+                font-size:150%;
+            }
+
+            .nav-panel ::content ul li a:hover {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 52rem) {
+                .profile-img {
+                    display: none;
+                }
+                :host {
+
+                    display: block;
+                    height: 200px;
+                    width:100%;
+                }
+            }
+
+
+
+
+        </style>
+        <div class="nav-panel">
+            <div class="profile-img">
+                <img src="https://pbs.twimg.com/profile_images/1098096355/portraitsqsm2.png" />
+            </div>
+
+            <p>
+                My name is Troy Pavlek. I've done lots of things including creating
+                <a href="http://sc2ctl.com">SC2CTL</a> (the largest Starcraft 2 Team League globally in 2013/2014) and
+                <a href="http://sodoge.ca">SoDoge.ca</a> (the best shibe wow-er on the internets)
+            </p>
+            <p>
+                Occasionally, I dabble in the more crayon side of things.
+            </p>
+
+            <content select="ul"></content>
+
+            <content></content>
+        </div>
+    </template>
+    <script>
+        Polymer({});
+    </script>
+
+</polymer-element>
