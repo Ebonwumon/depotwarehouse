@@ -25,7 +25,7 @@
             <ul>
                 <li class="pure-menu-selected"><a href="{{ URL::route('home.index') }}#">Home</a></li>
                 <li><a href="{{ URL::route('home.index') }}#about">About</a></li>
-                <li><a href="{{ URL::to('blog') }}">Blog</a></li>
+                <li><a href="http://tpavlek.me">Blog</a></li>
                 <li><a href="{{ URL::route('home.index') }}#contact">Contact</a></li>
             </ul>
         </div>
